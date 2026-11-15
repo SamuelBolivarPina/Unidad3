@@ -1,4 +1,4 @@
-public class AutenticacionLocal implements ServicioAuteticacion{
+public class AutenticacionLocal implements ServicioAutenticacion {
     @Override
     public boolean autenticar(String usuario, String contrasena) {
         // Lógica simulada de autenticación local

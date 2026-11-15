@@ -1,3 +1,3 @@
-public interface ServicioAuteticacion {
+public interface ServicioAutenticacion {
     boolean autenticar(String usuario, String contrasena);
 }
