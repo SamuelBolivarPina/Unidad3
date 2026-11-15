@@ -4,7 +4,8 @@ public class AlmacenamientoLocal implements Almacenamiento{
         System.out.println("Guardando el archivo '" + nombreArchivo + "' en el disco duro local.");
     }
     @Override
-    public void recuperarArchivo(String nombreArchivo) {
+    public String recuperarArchivo(String nombreArchivo) {
         System.out.println("Recuperando el archivo '" + nombreArchivo + "' desde el almacenamiento local.");
+        return nombreArchivo;
     }
 }

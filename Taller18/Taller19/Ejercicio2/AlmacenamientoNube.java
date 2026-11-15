@@ -5,7 +5,8 @@ public class AlmacenamientoNube implements Almacenamiento {
     }
 
     @Override
-    public void recuperarArchivo(String nombreArchivo) {
+    public String recuperarArchivo(String nombreArchivo) {
         System.out.println("Descargando el archivo '" + nombreArchivo + "' desde la nube.");
+        return nombreArchivo;
     }
 }
