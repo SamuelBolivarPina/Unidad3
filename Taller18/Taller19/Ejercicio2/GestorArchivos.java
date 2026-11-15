@@ -6,4 +6,9 @@ public class GestorArchivos {
     public GestorArchivos(Almacenamiento almacenamiento) {
         this.almacenamiento = almacenamiento;
     }
+    public void respaldar(String nombreArchivo) {
+        System.out.println("Iniciando proceso de respaldo...");
+        almacenamiento.guardarArchivo(nombreArchivo);
+        System.out.println("¡Respaldo completado con éxito!\n");
+    }
 }
