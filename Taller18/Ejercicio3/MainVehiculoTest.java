@@ -6,6 +6,12 @@ public class MainVehiculoTest {
         Camion miCamion = new Camion("ABC-123");
         miCamion.conducir();
         miCamion.cargarMercancia(5000.0);
+
+        // 2. Probando el Auto Particular (No tiene métodos de carga innecesarios)
+        AutoParticular miAuto = new AutoParticular("Mazda 3");
+        miAuto.conducir();
     }
 }
+
+
 
