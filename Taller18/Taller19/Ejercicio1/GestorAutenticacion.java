@@ -5,4 +5,13 @@ public class GestorAutenticacion {
     public GestorAutenticacion(ServicioAutenticacion servicioAutenticacion) {
         this.servicioAutenticacion = servicioAutenticacion;
     }
+
+    public void iniciarSesion(String usuario, String contrasena) {
+        boolean exito = servicioAutenticacion.autenticar(usuario, contrasena);
+        if (exito) {
+            System.out.println("¡Inicio de sesión exitoso!\n");
+        } else {
+            System.out.println("Error: Credenciales inválidas.\n");
+        }
+    }
 }
