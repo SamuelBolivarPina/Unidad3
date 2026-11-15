@@ -6,10 +6,11 @@ public class MainReporteTest {
         GeneradorReporte pdf = new ReportePDF();
         GestorReportes gestorPDF = new GestorReportes(pdf);
         gestorPDF.procesarReporte("Resumen de notas - Unidad 3 POO");
-    }
-    // 2. Cambiando a reporte en Excel de forma transparente
-    GeneradorReporte excel = new ReporteExcel();
-    GestorReportes gestorExcel = new GestorReportes(excel);
+
+        // 2. Cambiando a reporte en Excel de forma transparente
+        GeneradorReporte excel = new ReporteExcel();
+        GestorReportes gestorExcel = new GestorReportes(excel);
         gestorExcel.procesarReporte("Inventario de notas de estudiantes");
+    }
 }
 
