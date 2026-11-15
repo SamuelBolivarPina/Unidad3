@@ -6,5 +6,11 @@ public class MainAutenticadorTest {
         ServicioAutenticacion authLocal = new AutenticacionLocal();
         GestorAutenticacion gestor1 = new GestorAutenticacion(authLocal);
         gestor1.iniciarSesion("admin", "1234");
+
+        // 2. Cambiando a autenticación OAuth de forma transparente (Inversión de Dependencias)
+        ServicioAutenticacion authOAuth = new AutenticacionOAuth();
+        GestorAutenticacion gestor2 = new GestorAutenticacion(authOAuth);
+        gestor2.iniciarSesion("samuel_bolivar", "token_seguro");
     }
 }
+
